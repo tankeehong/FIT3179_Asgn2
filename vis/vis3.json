@@ -9,7 +9,7 @@
     "encoding": {
         "x": {"field": "Depth", "type": "quantitative"},
         "y": {"field": "Magnitude", "type": "quantitative","scale": {"domain": [5, 10]}},
-        "tooltip": [{"field": "datum.Year"},{"field":"datum.Magnitude","type":"quantitative"},{"field":"datum.Depth","type":"quantitative"}],
+        "tooltip": [{"field": "Year"},{"field":"Magnitude","type":"quantitative"},{"field":"Depth","type":"quantitative"}],
         "size": {"field": "Magnitude", "type": "quantitative","scale": {"domain": [5.5, 9.5], "range":[10, 100, 5000]}},
         "color": {"field": "Magnitude","type": "quantitative", "scale": {"scheme": "redyellowblue"},"sort": "descending"}
     }
