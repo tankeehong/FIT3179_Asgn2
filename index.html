@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    h4 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+</style>
+
+  <title>Flight Statistics</title>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="data/asgn2.css" media="all">
+
+
+</head>
+<body>
+
+ <div class="page">
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1 style="color: #677a80; font-size: 44px;">Earthquake Recordings</h1>
+        <h4>All Recordings from Year 1965 to 2016</h4>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+          <div class="description description-left">
+            <h2 class="title">Global Earthquakes</h2>
+            <div class="text-style">
+              Reee
+            </div>
+            <p style="font-size: 12px;"><i>✨ Hover over the points for more information! ✨</i></p>
+
+          </div>
+        </div>
+        <div class="pure-u-1-1">
+          <div id="vis1" class="vis-container"></div>
+        </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <br>
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div class="description description-left">
+          <h2 class="title">Yearly Recorded Earthquakes in South East Asia</h2>
+          <div class="text-style">
+            Ree3
+          </div>
+          <p style="font-size: 12px; font-style: italic;">This visualization shows the <b>top 25 geographical regions</b> having the highest number of fatal civil airliner accidents from 1945 until now.</p>
+          <p style="font-size: 12px;"><i>✨ Click on the map or bar chart to filter out the country. ✨</i></p>
+        </div>
+      </div>
+      <div class="pure-u-1-1">
+        <div id="vis2" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <br>
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description description-left">
+          <h2 class="title">Test</h2>
+          <div class="text-style">
+            <!-- <span>Occurrences have been coded to allow for identification and sorting by group (accidents versus attacks)</span> -->
+            <p>MB ⮕ body-wave magnitude </p>
+            <p>MD ⮕ Magnitude duration</p>
+            
+            <p>MH ⮕ Non-standard magnitude</p>
+            <p>ML ⮕ local magnitude</p>
+  
+            <p>MS ⮕ surface-wave magnitude </p>
+            <p>MW ⮕ moment magnitude</p>
+          </div>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="vis4"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <br>
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div>
+          <h1 style="color: crimson; font-size: 25px;">Magnitude to Depth plot</h1>
+          <h2 class="title">Most dangerous Earthquake recorded📌</h2>
+        </div>
+      </div>
+      <div class="pure-u-1-1">
+        <h3 style="font-size: 25px; ">At a magnitude of <span style="color: red; font-size: 25px;">9.1</span> and a depth from sea level of <span style="color: red; font-size: 25px;">29 meters</span></h3>
+        <p style="font-size: 15px;"><i> Recorded in <b>2011</b> at <b>the coast of Japan</b> </i></p>
+      </div>
+      <div class="pure-u-1-1">
+        <div id="vis3"  class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <br>
+
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <p>FIT3179 Data Visualization 2 </p>
+        <p>This visualisation is created by <a href="https://github.com/tankeehong" target="_blank">Tan Kee Hong</a>. The datasource can be found <a href="https://github.com/tankeehong/FIT3179_Asgn2/" target="_blank">here</a>.</p>
+      </div>
+    </div>
+    
+  </div> <!-- end page -->
+      
+     <script type="text/javascript">
+        var specVis1 = "vis/vis1.json";
+        var specVis2= "vis/vis2.json";
+        var specVis3= "vis/vis3.json";
+        var specVis4= "vis/vis4.json";
+
+      
+      
+        vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+      
+         vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+      
+        vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+      
+          vegaEmbed('#vis4', specVis4, {"actions": false}).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+      
+      </script>
+</body>
+</html>
