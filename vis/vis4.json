@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 1200,
+    "height": 800,
+    "data": {
+        "url": "https://raw.githubusercontent.com/tankeehong/FIT3179_Asgn2/main/code/database_agg_cleaned.csv"
+    },
+  "mark": "bar",
+  "params":[
+    {
+        "name": "Magnitude_type",
+        "select": {"type": "point", "fields": ["Magnitude Type"]},
+        "bind": {"input": "select", "options": ["null","MB", "MD", "MH", "ML", "MS", "MW", "MWB", "MWC", "MWR", "MWW",""], "name": "Magnitude: "}
+        
+    }
+    ],
+
+  "encoding": {
+      
+    "x": {
+      "timeUnit": "year",
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Years",
+      "axis": {"labelAngle": -45}
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative"
+    },
+    "color": {
+        "condition": {
+            "param": "Magnitude_type",
+            "field": "Magnitude Type", "type": "ordinal"
+          },
+      "value": "grey"
+    }
+  }
+}
