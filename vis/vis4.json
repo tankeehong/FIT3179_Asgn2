@@ -1,9 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 1200,
-    "height": 800,
+    "width": 700,
+    "height": 500,
     "data": {
-        "url": "https://raw.githubusercontent.com/tankeehong/FIT3179_Asgn2/main/code/database_agg_cleaned.csv"
+        "url": "https://raw.githubusercontent.com/tankeehong/FIT3179_Asgn2/main/data/database_agg_cleaned.csv"
     },
   "mark": "bar",
   "params":[
