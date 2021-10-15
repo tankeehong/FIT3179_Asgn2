@@ -18,13 +18,14 @@
            "mark": {"type": "geoshape", "fill": "gray", "stroke": "white"}
        },
        {
-         "mark": {"type": "circle", "tooltip": {"content": "data"}},
+         "mark": {"type": "circle"},
          "transform": [
             {"filter": {"field": "Type", "equal": "Earthquake"}}
         ],
          "encoding": {
            "longitude": {"field": "Longitude", "type": "quantitative"},
            "latitude": {"field": "Latitude", "type": "quantitative"},
+           "tooltip": [{"field": "Year"},{"field":"Magnitude","type":"quantitative"},{"field":"Depth","type":"quantitative"},{"field":"Longitude","type":"quantitative"},{"field":"Latitude","type":"quantitative"}],
            "size": {
              "field": "Magnitude",
              "type": "quantitative",
