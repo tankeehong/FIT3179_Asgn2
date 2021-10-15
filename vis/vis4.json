@@ -10,7 +10,7 @@
     {
         "name": "Magnitude_type",
         "select": {"type": "point", "fields": ["Magnitude Type"]},
-        "bind": {"input": "select", "options": ["null","MB", "MD", "MH", "ML", "MS", "MW", "MWB", "MWC", "MWR", "MWW",""], "name": "Magnitude: "}
+        "bind": {"input": "select", "options": ["null","MB", "MD", "MH", "ML", "MS", "MW", "MWB", "MWC", "MWR", "MWW"], "name": "Magnitude: "}
         
     }
     ],
