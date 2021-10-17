@@ -30,7 +30,7 @@
            "size": {
              "field": "Magnitude",
              "type": "quantitative",
-             "scale": {"domain": [5.5, 9.5], "range":[10, 1000, 5000]}
+             "scale": {"domain": [5.5, 9.5], "range":[10, 500, 5000]}
            },
            "color": {
                       "field": "Depth",
