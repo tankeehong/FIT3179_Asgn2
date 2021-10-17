@@ -32,12 +32,12 @@
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <h1 style="color: #677a80; font-size: 44px;">Earthquake Recordings</h1>
+        <h1 style="color: #677a80; font-size: 44px;"><span style="color: red; font-size: 44px;">Earthquake</span> Recordings</h1>
         <h4>All Recordings from Year 1965 to 2016</h4>
       </div>
     </div>
     <!-- end pure grid group -->
-
+    <hr width="80%" size="20" color= #677a80 noshade>
     <!-- pure grid group -->
     <div class="pure-g">
       
@@ -81,16 +81,20 @@
     <div class="pure-g">
       <div class="pure-u-1-1">
         <div class="description description-left">
-          <h2 class="title">Yearly Recorded Earthquakes in Asia</h2>
+          <h2 class="title">Yearly Recorded Earthquakes in Hotspots</h2>
           <div class="text-style">
+            Based on the visualization above, we can derive that earthquakes are more likely to occur at specific regions. Let's have a closer look at these two areas!
             Based on the visualization, earthquakes often occur at specific regions, which are the <span style="color: red; font-size: 18px;">East of Japan</span> and at <span style="color: red; font-size: 18px;">East Timor</span>
           </div>
           <p style="font-size: 12px; font-style: italic;">This visualization shows the <b>the yearly earthquake recordings</b> since 1965 up till 2016</p>
           <p style="font-size: 12px;"><i> Adjust the filter bar to change the years.</i></p>
         </div>
       </div>
-      <div class="pure-u-1-1">
+      <div class="pure-u-1-2">
         <div id="vis2" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="vis3" class="vis-container"></div>
       </div>
     </div>
     <!-- end pure grid group -->
@@ -115,7 +119,7 @@
         </div>
       </div>
       <div class="pure-u-1-4">
-        <div id="vis4"></div>
+        <div id="vis5"></div>
       </div>
     </div>
     <!-- end pure grid group -->
@@ -135,7 +139,7 @@
         <p style="font-size: 15px;"><i> Recorded in <b>2011</b> at <b>the coast of Japan</b> </i></p>
       </div>
       <div class="pure-u-1-1">
-        <div id="vis3"  class="vis-container"></div>
+        <div id="vis4"  class="vis-container"></div>
       </div>
     </div>
     <!-- end pure grid group -->
@@ -163,7 +167,7 @@
         <p style="font-size: 15px;"><i><b>Jan. 23, 1556</b> in <b>Shansi, China</b>, with a total death count of <span style="color: red; font-size: 25px;">830,000</span></i></p>
       </div>
       <div class="pure-u-1-1">
-        <!-- <div id="vis3"  class="vis-container"></div> -->
+        <!-- <div id="vis4"  class="vis-container"></div> -->
       </div>
     </div>
     <!-- end pure grid group -->
@@ -178,10 +182,11 @@
   </div> <!-- end page -->
       
      <script type="text/javascript">
-        var specVis1 = "vis/vis1.json";
-        var specVis2= "vis/vis2.json";
-        var specVis3= "vis/vis3.json";
-        var specVis4= "vis/vis4.json";
+        var specVis1 = "vis/equalE_zoom.json";
+        var specVis2= "vis/asia_yearly.json";
+        var specVis3= "vis/southafrica_yearly.json";
+        var specVis4= "vis/vis3.json";
+        var specVis5= "vis/vis4.json";
 
       
       
@@ -201,6 +206,9 @@
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
+        vegaEmbed('#vis5', specVis5, {"actions": false}).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
       
       </script>
 </body>
