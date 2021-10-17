@@ -9,8 +9,8 @@
     "encoding": {
         "x": {"field": "Depth", "type": "quantitative"},
         "y": {"field": "Magnitude", "type": "quantitative","scale": {"domain": [5, 10]}},
-        "tooltip": [{"field": "Year"},{"field":"Magnitude","type":"quantitative"},{"field":"Depth","type":"quantitative"}],
-        "size": {"field": "Magnitude", "type": "quantitative","scale": {"domain": [5.5, 9.5], "range":[10, 100, 5000]}},
+        "tooltip": [{"field": "Date"},{"field": "Year"},{"field": "Time"},{"field":"Magnitude","type":"quantitative"},{"field":"Depth","type":"quantitative"},{"field":"Longitude","type":"quantitative"},{"field":"Latitude","type":"quantitative"}],
+        "size": {"field": "Magnitude", "type": "quantitative","scale": {"domain": [5.5, 9.5], "range":[6, 600]}},
         "color": {"field": "Magnitude","type": "quantitative", "scale": {"scheme": "redyellowblue"},"sort": "descending"}
     }
 }

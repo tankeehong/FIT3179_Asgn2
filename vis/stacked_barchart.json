@@ -16,7 +16,7 @@
     ],
 
   "encoding": {
-      
+    "tooltip": [{"field": "Date"},{"field": "Year"},{"field": "Time"},{"field":"Magnitude","type":"quantitative"},{"field":"Depth","type":"quantitative"},{"field":"Longitude","type":"quantitative"},{"field":"Latitude","type":"quantitative"}],
     "x": {
       "timeUnit": "year",
       "field": "Year",

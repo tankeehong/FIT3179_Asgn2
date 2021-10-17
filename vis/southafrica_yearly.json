@@ -47,7 +47,7 @@
                       "field": "Depth",
                       "type": "quantitative",
                       "scale": {"scheme": "lightmulti"},
-                      "legend":{"fillColor":"white", "direction": "vertical", "padding":24,"orient": "right"}
+                      "legend":{"fillColor":"white", "direction": "horizontal", "padding":24,"orient": "right"}
            }
          }
        }
