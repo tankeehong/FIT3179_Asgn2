@@ -32,38 +32,48 @@
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <h1 style="color: #677a80; font-size: 44px;"><span style="color: red; font-size: 44px;">Earthquake</span> Recordings</h1>
-        <h4>All Recordings from Year 1965 to 2016</h4>
-      </div>
-    </div>
-    <!-- end pure grid group -->
-    <hr width="80%" size="20" color= #677a80 noshade>
-    <!-- pure grid group -->
-    <div class="pure-g">
-      
-      <div class="pure-u-1-1">
-        <h2 class="title">Up until 2016:</h2>
-      </div>
-      <div class="pure-u-1-3">
-        <h4>Stat 1</h4>
-      </div>
-      <div class="pure-u-1-3">
-        <h4>Stat 2</h4>
-      </div>
-      <div class="pure-u-1-3">
-        <h4>Stat 3</h4>
+        <h1 style="color: #677a80; font-size: 44px;"><span style="color: red; font-size: 44px;">Significant</span> Earthquake Recordings</h1>
+        <h4>Recordings of all earthquakes with magnitude of <span style="color: red;">5.5</span> or higher ( 1965 - 2016 )</h4>
       </div>
     </div>
     <!-- end pure grid group -->
 
+    <br>
+
+    <hr>
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h2 class="title">Up until 2016:</h2>
+      </div>
+    </div>
+      <div class="container">
+        <div class = "box">
+          <div class="content">
+            <p style="padding-top: 10px;"><b>There are <span style="color: #fff; font-size: 20px;">500,000</span> earthquakes  detected in the world each year</b></p>
+          </div> 
+        </div>
+        <div class = "box">
+          <p style="padding-top: 10px;"><b>A total of <span style="color: #fff; font-size: 20px;">23412</span> significant earthquakes have been recorded</b></p>
+        </div>
+        <div class = "box">
+          <p><b>There are only  <span style="color: #fff; font-size: 20px;">5</span> earthquakes that reach the magnitude of 9 and above</b></p>
+        </div>
+      </div>
+    <!-- end pure grid group -->
+
+  <hr>
+
+  <br>
 
     <!-- pure grid group -->
     <div class="pure-g">
         <div class="pure-u-1-1">
-          <div class="description description-left">
+          <div class="description">
             <h2 class="title">Total Recordings of earthquakes around the world</h2>
             <div class="text-style">
-              Statistic text style 
+              <p style="margin-left: 90px; margin-right: 90px;">The significance of earthquakes are classified by their magnitude, depth and intensity. Minor earthquakes range between magnitudes of 3.0 to 3.9, and increases up to 8.0 where significant damage is to be expected.  
+              </p>
             </div>
             <p style="font-size: 12px;"><i> Hover over the points for more information! </i></p>
 
@@ -80,21 +90,34 @@
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <div class="description description-left">
+        <div class="description">
           <h2 class="title">Yearly Recorded Earthquakes in Hotspots</h2>
           <div class="text-style">
-            Based on the visualization above, we can derive that earthquakes are more likely to occur at specific regions. Let's have a closer look at these two areas!
-            Based on the visualization, earthquakes often occur at specific regions, which are the <span style="color: red; font-size: 18px;">East of Japan</span> and at <span style="color: red; font-size: 18px;">East Timor</span>
+            <p style="margin-left: 90px; margin-right: 90px;">
+              <b>From the visualization above, we can derive that earthquakes are more likely to occur at specific regions. Let's have a closer look at these two areas! </b>
+            </p>
           </div>
-          <p style="font-size: 12px; font-style: italic;">This visualization shows the <b>the yearly earthquake recordings</b> since 1965 up till 2016</p>
-          <p style="font-size: 12px;"><i> Adjust the filter bar to change the years.</i></p>
+          
+          <p style="margin-left: 90px; margin-right: 90px;">
+            <b>The visualizations shows the <b>the yearly earthquake recordings</b> since 1965 up till 2016 </b>
+          </p>
         </div>
       </div>
       <div class="pure-u-1-2">
+        <p style="font-size: 14px; padding-left: 30px; padding-right: 30px;">
+          Yearly earthquakes in the<span style="color: red;"> coast of South America</span>
+        </p> 
         <div id="vis2" class="vis-container"></div>
       </div>
       <div class="pure-u-1-2">
+        <p style="font-size: 14px; padding-left: 30px; padding-right: 30px;">
+          Yearly earthquakes that occur at the <span style="color: red;">East of Japan</span> and at <span style="color: red;">East Timor</span>
+        </p>  
         <div id="vis3" class="vis-container"></div>
+        
+      </div>
+      <div class="pure-u-1-1">
+        <p style="font-size: 12px;"><i> Adjust the filter bars to change the years.</i></p>
       </div>
     </div>
     <!-- end pure grid group -->
@@ -104,17 +127,19 @@
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-4">
-        <div class="description description-left">
-          <h2 class="title">Test</h2>
+        <div class="description">
+          <h2 class="title">Types of wave classifications</h2>
           <div class="text-style">
-            <p>MB ⮕ body-wave magnitude </p>
-            <p>MD ⮕ Magnitude duration</p>
-            
-            <p>MH ⮕ Non-standard magnitude</p>
-            <p>ML ⮕ local magnitude</p>
-  
-            <p>MS ⮕ surface-wave magnitude </p>
-            <p>MW ⮕ moment magnitude</p>
+              <p style="text-align: left; padding-left: 50px;">MB ⮕ body-wave magnitude </p>
+              <p style="text-align: left; padding-left: 50px;">MD ⮕ Magnitude duration</p>
+              <p style="text-align: left; padding-left: 50px;">MH ⮕ Non-standard magnitude</p>
+              <p style="text-align: left; padding-left: 50px;">ML ⮕ local magnitude</p>
+              <p style="text-align: left; padding-left: 50px;">MS ⮕ surface-wave magnitude </p>
+              <p style="text-align: left; padding-left: 50px;">MW ⮕ moment magnitude</p>
+              <p style="text-align: left; padding-left: 50px;">MWB ⮕ MW body-wave</p>
+              <p style="text-align: left; padding-left: 50px;">MWC ⮕ MW centroid</p>
+              <p style="text-align: left; padding-left: 50px;">MWR ⮕ MW regional</p>
+              <p style="text-align: left; padding-left: 50px;">MWW ⮕ MW W-phase</p>
           </div>
         </div>
       </div>
@@ -135,7 +160,7 @@
         </div>
       </div>
       <div class="pure-u-1-1">
-        <h3 style="font-size: 25px; ">At a magnitude of <span style="color: red; font-size: 25px;">9.1</span> and a depth from sea level of <span style="color: red; font-size: 25px;">29 meters</span></h3>
+        <h3 style="font-size: 25px; ">At a magnitude of <span style="color: red;">9.1</span> and a depth from sea level of <span style="color: red;">29 meters</span></h3>
         <p style="font-size: 15px;"><i> Recorded in <b>2011</b> at <b>the coast of Japan</b> </i></p>
       </div>
       <div class="pure-u-1-1">
@@ -151,20 +176,25 @@
       <div class="pure-u-1-1">
         <div>
           <h1 style="color: crimson; font-size: 40px;">Up to date Earthquake Statistics</h1>
-          <h2 class="title">World Records</h2>
         </div>
       </div>
       <div class="pure-u-1-2">
-        <h3 style="font-size: 25px; "><span style="color: red; font-size: 25px;">Increased</span> from 20 to 25</h3>
-        <p style="font-size: 15px;"><i>average number of significant earthquakes in the <b>1970s</b> vs. 2010s</i></p>
+        <h3 style="font-size: 25px; "><span style="color: red; font-size: 25px;">Increased</span> from 20 to 25 average</h3>
+        <p style="font-size: 15px;"><i>number of significant earthquakes in the <b>1970s</b> vs. <b>2010s</b></i></p>
       </div>
       <div class="pure-u-1-2">
-        <h3 style="font-size: 25px;"><span style="color: red; font-size: 25px;">Decreased</span> from 75 to 70</h3>
-        <p style="font-size: 15px;"><i>average number of Earthquakes measuring 6 and above in magnitude from <b>1970s</b> vs. 2010s</i></p>
+        <h3 style="font-size: 25px;"><span style="color: red; font-size: 25px;">Decreased</span> from 75 to 70 average</h3>
+        <p style="font-size: 15px; padding-right: 40px;"><i>number of earthquakes with magnitude 6 and above from <b>1970s</b> vs. <b>2010s</b></i></p>
       </div>
-      <div class="pure-u-1-1">
-        <h3 style="font-size: 25px;  ">The most <span style="color: red; font-size: 25px;"><b>deadliest</b></span> earthquakes ever recorded </h3>
-        <p style="font-size: 15px;"><i><b>Jan. 23, 1556</b> in <b>Shansi, China</b>, with a total death count of <span style="color: red; font-size: 25px;">830,000</span></i></p>
+      <div class="pure-u-1-2">
+        <h2 class="title"><p style="text-align: left; padding-left: 80px;">World Records ▼</p></h2>
+        <h4>The most <span style="color: red; font-size: 25px;"><b>deadliest</b></span> earthquake ever recorded: </h3>
+        <p style="font-size: 15px; text-align: left; padding-left: 80px;"><i><b>Jan. 23, 1556</b> in <b>Shansi, China</b>, with a total death count of <span style="color: red; font-size: 25px;">830,000</span></i></p>
+      </div>
+      <div class="pure-u-1-2">
+        <h2 class="title"> &nbsp;</h2>
+        <h4>The most <span style="color: red; font-size: 25px;"><b>longest</b></span> earthquake ever recorded: </h3>
+        <p style="font-size: 15px; text-align: left; padding-left: 80px;"><i>At <b>the coast of the Indonesian island of Sumatra</b>, from <b>1829 to 1861</b>, a "slow-earthquake" lasted for <span style="color: red; font-size: 25px;"> 32 years</span></i></p>
       </div>
       <div class="pure-u-1-1">
         <!-- <div id="vis4"  class="vis-container"></div> -->
@@ -174,7 +204,7 @@
     
     <div class="pure-g">
       <div class="pure-u-1-1 small-font">
-        <p>FIT3179 Data Visualization 2 </p>
+        <p>&nbsp;</p>
         <p>This visualisation is created by <a href="https://github.com/tankeehong" target="_blank">Tan Kee Hong</a>. The datasource can be found <a href="https://github.com/tankeehong/FIT3179_Asgn2/" target="_blank">here</a>.</p>
       </div>
     </div>
@@ -183,8 +213,8 @@
       
      <script type="text/javascript">
         var specVis1 = "vis/equalE_zoom.json";
-        var specVis2= "vis/asia_yearly.json";
-        var specVis3= "vis/southafrica_yearly.json";
+        var specVis2= "vis/southafrica_yearly.json";
+        var specVis3= "vis/asia_yearly.json";
         var specVis4= "vis/vis3.json";
         var specVis5= "vis/vis4.json";
 

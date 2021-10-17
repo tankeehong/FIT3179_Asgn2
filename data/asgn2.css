@@ -14,7 +14,20 @@ h3{
     text-align: center;
     font-size: 32px;
 }
+h4{
+  text-align: left;
+  font-size: 25px;
+  padding-left: 80px;
+}
 
+hr {
+  border: none;
+  height: 3px;
+  width: 91%;
+  /* Set the hr color */
+  color: rgb(48, 48, 48); /* old IE */
+  background-color: rgb(48, 48, 48); /* Modern Browsers */
+}
 
 body{
     background-color: #677a80;
@@ -27,6 +40,29 @@ body{
     padding: 40px;
     padding-top: 28px;
 }
+.container{
+  position: relative;
+  width: 1100px;
+  height: 150px;  
+  padding-left: 99px;
+
+}
+.container .box{
+  position: relative;
+  width: 270px;
+  height: 100px;
+  background: #AD2A1A;
+  color: rgb(206, 206, 206);
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+
+}
 .vis-container{
     width: 100%;
     align-self: center;
@@ -36,13 +72,6 @@ body{
   }
   .description h2, h1{
     margin-top: 20px;
-  }
-  .description-right {
-    padding-left: 20px;
-    word-wrap: break-word;
-  }
-  .description-left{
-    padding-right: 20px;
   }
   .pure-g{
     margin-bottom: 25px;
@@ -55,5 +84,5 @@ body{
   }
   .text-style{
     font-size: 15px; 
-    line-height: 25px;
+    line-height: 15px;
   }
