@@ -7,7 +7,7 @@
      },
      
      "projection": {"type": "equalEarth"},
-   
+     "background": "gray",
      "layer": [
        {
            "data": {

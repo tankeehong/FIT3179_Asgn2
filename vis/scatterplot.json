@@ -3,7 +3,7 @@
     "width": 800,
     "height": 500,
     "data": {
-    "url": "https://raw.githubusercontent.com/tankeehong/FIT3179_Asgn2/main/data/database_agg_cleaned.csv"
+    "url": "https://raw.githubusercontent.com/tankeehong/FIT3179_Asgn2/main/data/database_final.csv"
     },
     "mark":{"type": "circle"},
     "encoding": {

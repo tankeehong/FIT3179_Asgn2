@@ -1,39 +1,39 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 700,
-    "height": 500,
-    "data": {
-        "url": "https://raw.githubusercontent.com/tankeehong/FIT3179_Asgn2/main/data/database_agg_cleaned.csv"
-    },
-  "mark": "bar",
-  "params":[
-    {
-        "name": "Magnitude_type",
-        "select": {"type": "point", "fields": ["Magnitude Type"]},
-        "bind": {"input": "select", "options": ["null","MB", "MD", "MH", "ML", "MS", "MW", "MWB", "MWC", "MWR", "MWW"], "name": "Magnitude: "}
-        
-    }
-    ],
-
-  "encoding": {
-    "tooltip": [{"field": "Date"},{"field": "Year"},{"field": "Time"},{"field":"Magnitude","type":"quantitative"},{"field":"Depth","type":"quantitative"},{"field":"Longitude","type":"quantitative"},{"field":"Latitude","type":"quantitative"}],
-    "x": {
-      "timeUnit": "year",
-      "field": "Year",
-      "type": "ordinal",
-      "title": "Years",
-      "axis": {"labelAngle": -45}
-    },
-    "y": {
-      "aggregate": "count",
-      "type": "quantitative"
-    },
-    "color": {
-        "condition": {
-            "param": "Magnitude_type",
-            "field": "Magnitude Type", "type": "ordinal"
-          },
-      "value": "grey"
-    }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 500,
+  "data": {
+      "url": "https://raw.githubusercontent.com/tankeehong/FIT3179_Asgn2/main/data/database_final.csv"
+  },
+"mark": "bar",
+"params":[
+  {
+      "name": "Magnitude_type",
+      "select": {"type": "point", "fields": ["Magnitude_Type"]},
+      "bind": {"input": "select", "options": ["null","MB", "MD", "MH", "ML", "MS", "MW", "MWB", "MWC", "MWR", "MWW"], "name": "Magnitude: "}
+      
   }
+  ],
+
+"encoding": {
+  "tooltip": [{"field": "Date"},{"field": "Year"},{"field": "Time"},{"field":"Magnitude","type":"quantitative"},{"field":"Depth","type":"quantitative"},{"field":"Magnitude_Type"}],
+  "x": {
+    "timeUnit": "year",
+    "field": "Year",
+    "type": "ordinal",
+    "title": "Years",
+    "axis": {"labelAngle": -45}
+  },
+  "y": {
+    "aggregate": "count",
+    "type": "quantitative"
+  },
+  "color": {
+      "condition": {
+          "param": "Magnitude_type",
+          "field": "Magnitude_Type", "type": "nominal"
+        },
+    "value": "grey"
+  }
+}
 }
