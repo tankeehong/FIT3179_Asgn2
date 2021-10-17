@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-     "width": 600,
-     "height": 600,
+     "width": 350,
+     "height": 400,
      "data": {
          "url": "https://raw.githubusercontent.com/tankeehong/FIT3179_Asgn2/main/data/database_final.csv"
      },
@@ -13,7 +13,7 @@
             
         }
     ],
-     "projection": {"type": "mercator", "scale": 400, "rotate": [0, 0, 0],"center": [-86, -30]},
+     "projection": {"type": "mercator", "scale": 280, "rotate": [0, 0, 0],"center": [-86, -24]},
      "background": "gray",
      "layer": [
        {
